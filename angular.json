@@ -2,5 +2,41 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
-  "projects": {}
+  "projects": {
+    "button": {
+      "projectType": "library",
+      "root": "projects/ng-galaxy/button",
+      "sourceRoot": "projects/ng-galaxy/button/src",
+      "prefix": "galaxy",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-galaxy/button/tsconfig.lib.json",
+            "project": "projects/ng-galaxy/button/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-galaxy/button/src/test.ts",
+            "tsConfig": "projects/ng-galaxy/button/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-galaxy/button/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-galaxy/button/tsconfig.lib.json",
+              "projects/ng-galaxy/button/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "defaultProject": "button"
 }

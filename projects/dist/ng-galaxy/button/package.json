@@ -1,0 +1,21 @@
+{
+  "name": "@ng-galaxy/button",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.2.0",
+    "@angular/core": "^8.2.0"
+  },
+  "main": "bundles/ng-galaxy-button.umd.js",
+  "module": "fesm5/ng-galaxy-button.js",
+  "es2015": "fesm2015/ng-galaxy-button.js",
+  "esm5": "esm5/ng-galaxy-button.js",
+  "esm2015": "esm2015/ng-galaxy-button.js",
+  "fesm5": "fesm5/ng-galaxy-button.js",
+  "fesm2015": "fesm2015/ng-galaxy-button.js",
+  "typings": "ng-galaxy-button.d.ts",
+  "metadata": "ng-galaxy-button.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

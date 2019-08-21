@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "button": [
+        "dist/ng-galaxy/button"
+      ],
+      "button/*": [
+        "dist/ng-galaxy/button/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
